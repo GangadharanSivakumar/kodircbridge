@@ -1,1 +1,1 @@
-bot: discord-irc --config config.json
+bot: npm start -- --config config.json
