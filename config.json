@@ -1,16 +1,16 @@
 [
   // Bot 2 (advanced options):
   {
-    "nickname": "process.env.username",
+    "nickname": "Mia",
     "server": "irc.bttdm.com",
     "discordToken": "process.env.token",
     "autoSendCommands": [ // Commands that will be sent on connect
       ["PRIVMSG", "NickServ", "IDENTIFY password"],
-      ["MODE", "process.env.username", "+x"],
-      ["AUTH", "process.env.username", "process.env.password"]
+      ["MODE", "Mia", "+x"],
+      ["AUTH", "Mia", "process.env.password"]
     ],
     "channelMapping": { // Maps each Discord-channel to an IRC-channel, used to direct messages to the correct place
-      "518015446478356490": "#kodmeeting", // Add channel keys after the channel name
+      "process.env.dischannel": "#kodmeeting", // Add channel keys after the channel name
       "1234567890": "#channel" // Use a discord channel ID instead of its name (so you can rename it or to disambiguate)
     },
     "ircOptions": { // Optional node-irc options
