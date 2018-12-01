@@ -1,1 +1,1 @@
-bot: node ./dist/index.js
+bot: discord-irc --config config.json
